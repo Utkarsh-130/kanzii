@@ -1,0 +1,422 @@
+{
+  "あ": {
+    "romaji": "a",
+    "line": "a-line"
+  },
+  "い": {
+    "romaji": "i",
+    "line": "a-line"
+  },
+  "う": {
+    "romaji": "u",
+    "line": "a-line"
+  },
+  "え": {
+    "romaji": "e",
+    "line": "a-line"
+  },
+  "お": {
+    "romaji": "o",
+    "line": "a-line"
+  },
+  "か": {
+    "romaji": "ka",
+    "line": "k-line"
+  },
+  "き": {
+    "romaji": "ki",
+    "line": "k-line"
+  },
+  "く": {
+    "romaji": "ku",
+    "line": "k-line"
+  },
+  "け": {
+    "romaji": "ke",
+    "line": "k-line"
+  },
+  "こ": {
+    "romaji": "ko",
+    "line": "k-line"
+  },
+  "さ": {
+    "romaji": "sa",
+    "line": "s-line"
+  },
+  "し": {
+    "romaji": "shi",
+    "line": "s-line"
+  },
+  "す": {
+    "romaji": "su",
+    "line": "s-line"
+  },
+  "せ": {
+    "romaji": "se",
+    "line": "s-line"
+  },
+  "そ": {
+    "romaji": "so",
+    "line": "s-line"
+  },
+  "た": {
+    "romaji": "ta",
+    "line": "t-line"
+  },
+  "ち": {
+    "romaji": "chi",
+    "line": "t-line"
+  },
+  "つ": {
+    "romaji": "tsu",
+    "line": "t-line"
+  },
+  "て": {
+    "romaji": "te",
+    "line": "t-line"
+  },
+  "と": {
+    "romaji": "to",
+    "line": "t-line"
+  },
+  "な": {
+    "romaji": "na",
+    "line": "n-line"
+  },
+  "に": {
+    "romaji": "ni",
+    "line": "n-line"
+  },
+  "ぬ": {
+    "romaji": "nu",
+    "line": "n-line"
+  },
+  "ね": {
+    "romaji": "ne",
+    "line": "n-line"
+  },
+  "の": {
+    "romaji": "no",
+    "line": "n-line"
+  },
+  "は": {
+    "romaji": "ha",
+    "line": "h-line"
+  },
+  "ひ": {
+    "romaji": "hi",
+    "line": "h-line"
+  },
+  "ふ": {
+    "romaji": "fu",
+    "line": "h-line"
+  },
+  "へ": {
+    "romaji": "he",
+    "line": "h-line"
+  },
+  "ほ": {
+    "romaji": "ho",
+    "line": "h-line"
+  },
+  "ま": {
+    "romaji": "ma",
+    "line": "m-line"
+  },
+  "み": {
+    "romaji": "mi",
+    "line": "m-line"
+  },
+  "む": {
+    "romaji": "mu",
+    "line": "m-line"
+  },
+  "め": {
+    "romaji": "me",
+    "line": "m-line"
+  },
+  "も": {
+    "romaji": "mo",
+    "line": "m-line"
+  },
+  "や": {
+    "romaji": "ya",
+    "line": "y-line"
+  },
+  "ゆ": {
+    "romaji": "yu",
+    "line": "y-line"
+  },
+  "よ": {
+    "romaji": "yo",
+    "line": "y-line"
+  },
+  "ら": {
+    "romaji": "ra",
+    "line": "r-line"
+  },
+  "り": {
+    "romaji": "ri",
+    "line": "r-line"
+  },
+  "る": {
+    "romaji": "ru",
+    "line": "r-line"
+  },
+  "れ": {
+    "romaji": "re",
+    "line": "r-line"
+  },
+  "ろ": {
+    "romaji": "ro",
+    "line": "r-line"
+  },
+  "わ": {
+    "romaji": "wa",
+    "line": "w-line"
+  },
+  "を": {
+    "romaji": "wo",
+    "line": "w-line"
+  },
+  "ん": {
+    "romaji": "n",
+    "line": "special"
+  }
+
+,
+  "が": {
+    "romaji": "ga",
+    "line": "g-line"
+  },
+  "ぎ": {
+    "romaji": "gi",
+    "line": "g-line"
+  },
+  "ぐ": {
+    "romaji": "gu",
+    "line": "g-line"
+  },
+  "げ": {
+    "romaji": "ge",
+    "line": "g-line"
+  },
+  "ご": {
+    "romaji": "go",
+    "line": "g-line"
+  },
+  "ざ": {
+    "romaji": "za",
+    "line": "z-line"
+  },
+  "じ": {
+    "romaji": "ji",
+    "line": "z-line"
+  },
+  "ず": {
+    "romaji": "zu",
+    "line": "z-line"
+  },
+  "ぜ": {
+    "romaji": "ze",
+    "line": "z-line"
+  },
+  "ぞ": {
+    "romaji": "zo",
+    "line": "z-line"
+  },
+  "だ": {
+    "romaji": "da",
+    "line": "d-line"
+  },
+  "ぢ": {
+    "romaji": "ji",
+    "line": "d-line"
+  },
+  "づ": {
+    "romaji": "zu",
+    "line": "d-line"
+  },
+  "で": {
+    "romaji": "de",
+    "line": "d-line"
+  },
+  "ど": {
+    "romaji": "do",
+    "line": "d-line"
+  },
+  "ば": {
+    "romaji": "ba",
+    "line": "b-line"
+  },
+  "び": {
+    "romaji": "bi",
+    "line": "b-line"
+  },
+  "ぶ": {
+    "romaji": "bu",
+    "line": "b-line"
+  },
+  "べ": {
+    "romaji": "be",
+    "line": "b-line"
+  },
+  "ぼ": {
+    "romaji": "bo",
+    "line": "b-line"
+  },
+  "ぱ": {
+    "romaji": "pa",
+    "line": "p-line"
+  },
+  "ぴ": {
+    "romaji": "pi",
+    "line": "p-line"
+  },
+  "ぷ": {
+    "romaji": "pu",
+    "line": "p-line"
+  },
+  "ぺ": {
+    "romaji": "pe",
+    "line": "p-line"
+  },
+  "ぽ": {
+    "romaji": "po",
+    "line": "p-line"
+  }
+
+,
+  "きゃ": {
+    "romaji": "kya",
+    "line": "k-line"
+  },
+  "きゅ": {
+    "romaji": "kyu",
+    "line": "k-line"
+  },
+  "きょ": {
+    "romaji": "kyo",
+    "line": "k-line"
+  },
+  "しゃ": {
+    "romaji": "sha",
+    "line": "s-line"
+  },
+  "しゅ": {
+    "romaji": "shu",
+    "line": "s-line"
+  },
+  "しょ": {
+    "romaji": "sho",
+    "line": "s-line"
+  },
+  "ちゃ": {
+    "romaji": "cha",
+    "line": "t-line"
+  },
+  "ちゅ": {
+    "romaji": "chu",
+    "line": "t-line"
+  },
+  "ちょ": {
+    "romaji": "cho",
+    "line": "t-line"
+  },
+  "にゃ": {
+    "romaji": "nya",
+    "line": "n-line"
+  },
+  "にゅ": {
+    "romaji": "nyu",
+    "line": "n-line"
+  },
+  "にょ": {
+    "romaji": "nyo",
+    "line": "n-line"
+  },
+  "ひゃ": {
+    "romaji": "hya",
+    "line": "h-line"
+  },
+  "ひゅ": {
+    "romaji": "hyu",
+    "line": "h-line"
+  },
+  "ひょ": {
+    "romaji": "hyo",
+    "line": "h-line"
+  },
+  "みゃ": {
+    "romaji": "mya",
+    "line": "m-line"
+  },
+  "みゅ": {
+    "romaji": "myu",
+    "line": "m-line"
+  },
+  "みょ": {
+    "romaji": "myo",
+    "line": "m-line"
+  },
+  "りゃ": {
+    "romaji": "rya",
+    "line": "r-line"
+  },
+  "りゅ": {
+    "romaji": "ryu",
+    "line": "r-line"
+  },
+  "りょ": {
+    "romaji": "ryo",
+    "line": "r-line"
+  },
+  "ぎゃ": {
+    "romaji": "gya",
+    "line": "g-line"
+  },
+  "ぎゅ": {
+    "romaji": "gyu",
+    "line": "g-line"
+  },
+  "ぎょ": {
+    "romaji": "gyo",
+    "line": "g-line"
+  },
+  "じゃ": {
+    "romaji": "ja",
+    "line": "z-line"
+  },
+  "じゅ": {
+    "romaji": "ju",
+    "line": "z-line"
+  },
+  "じょ": {
+    "romaji": "jo",
+    "line": "z-line"
+  },
+  "びゃ": {
+    "romaji": "bya",
+    "line": "b-line"
+  },
+  "びゅ": {
+    "romaji": "byu",
+    "line": "b-line"
+  },
+  "びょ": {
+    "romaji": "byo",
+    "line": "b-line"
+  },
+  "ぴゃ": {
+    "romaji": "pya",
+    "line": "p-line"
+  },
+  "ぴゅ": {
+    "romaji": "pyu",
+    "line": "p-line"
+  },
+  "ぴょ": {
+    "romaji": "pyo",
+    "line": "p-line"
+  }
+}
