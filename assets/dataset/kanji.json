@@ -1,0 +1,152 @@
+{
+  "人": {
+    "meaning": "person, human",
+    "reading": "ひと、じん、にん",
+    "strokes": 2,
+    "level": "basic"
+  },
+  "山": {
+    "meaning": "mountain",
+    "reading": "やま、さん",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "川": {
+    "meaning": "river",
+    "reading": "かわ、せん",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "火": {
+    "meaning": "fire",
+    "reading": "ひ、か",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "水": {
+    "meaning": "water",
+    "reading": "みず、すい",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "木": {
+    "meaning": "tree, wood",
+    "reading": "き、もく",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "日": {
+    "meaning": "sun, day",
+    "reading": "ひ、にち",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "月": {
+    "meaning": "moon, month",
+    "reading": "つき、げつ",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "土": {
+    "meaning": "earth, soil",
+    "reading": "つち、ど",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "大": {
+    "meaning": "big, large",
+    "reading": "おおきい、だい",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "小": {
+    "meaning": "small, little",
+    "reading": "ちいさい、しょう",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "車": {
+    "meaning": "car, vehicle",
+    "reading": "くるま、しゃ",
+    "strokes": 7,
+    "level": "basic"
+  },
+  "手": {
+    "meaning": "hand",
+    "reading": "て、しゅ",
+    "strokes": 4,
+    "level": "basic"
+  },
+  "足": {
+    "meaning": "foot, leg",
+    "reading": "あし、そく",
+    "strokes": 7,
+    "level": "basic"
+  },
+  "目": {
+    "meaning": "eye",
+    "reading": "め、もく",
+    "strokes": 5,
+    "level": "basic"
+  },
+  "耳": {
+    "meaning": "ear",
+    "reading": "みみ、じ",
+    "strokes": 6,
+    "level": "basic"
+  },
+  "口": {
+    "meaning": "mouth",
+    "reading": "くち、こう",
+    "strokes": 3,
+    "level": "basic"
+  },
+  "鼻": {
+    "meaning": "nose",
+    "reading": "はな、び",
+    "strokes": 14,
+    "level": "intermediate"
+  },
+  "学": {
+    "meaning": "study, learn",
+    "reading": "まなぶ、がく",
+    "strokes": 8,
+    "level": "basic"
+  },
+  "校": {
+    "meaning": "school",
+    "reading": "こう",
+    "strokes": 10,
+    "level": "basic"
+  },
+  "本": {
+    "meaning": "book, origin",
+    "reading": "ほん、もと",
+    "strokes": 5,
+    "level": "basic"
+  },
+  "読": {
+    "meaning": "read",
+    "reading": "よむ、どく",
+    "strokes": 14,
+    "level": "intermediate"
+  },
+  "書": {
+    "meaning": "write, book",
+    "reading": "かく、しょ",
+    "strokes": 10,
+    "level": "basic"
+  },
+  "話": {
+    "meaning": "talk, story",
+    "reading": "はなす、わ",
+    "strokes": 13,
+    "level": "intermediate"
+  },
+  "言": {
+    "meaning": "say, word",
+    "reading": "いう、げん",
+    "strokes": 7,
+    "level": "basic"
+  }
+}

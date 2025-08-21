@@ -1,7 +1,10 @@
 import { supabase } from '@/components/utils/supabase'
 import React, { useState } from 'react'
 import { Alert, AppState, StyleSheet, View } from 'react-native'
-import { Button, TextInput } from 'react-native-paper'
+import { Button, TextInput, Surface } from 'react-native-paper'
+import { ThemedText } from '@/components/ThemedText'
+import { theme } from '@/components/theme'
+import Animated, { FadeInDown } from 'react-native-reanimated'
 
 AppState.addEventListener('change', (state) => {
   if (state === 'active') {
@@ -44,48 +47,107 @@ export default function Auth() {
 
   return (
     <View style={styles.container}>
-      <View style={[styles.verticallySpaced, styles.mt20]}>
-        <TextInput
-          label="Email"
-          onChangeText={(text) => setEmail(text)}
-          value={email}
-          placeholder="email@address.com"
-          autoCapitalize="none"
-        />
-      </View>
-      <View style={styles.verticallySpaced}>
-        <TextInput
-          label="Password"
-          onChangeText={(text) => setPassword(text)}
-          value={password}
-          secureTextEntry={true}
-          placeholder="Password"
-          autoCapitalize="none"
-        />
-      </View>
-      <View style={[styles.verticallySpaced, styles.mt20]}>
-        <Button disabled={loading} onPress={() => signInWithEmail()}>
-          Sign in
+      <Animated.View entering={FadeInDown.delay(100)}>
+        <ThemedText type="heading" style={styles.title}>
+          Welcome!
+        </ThemedText>
+        <ThemedText type="default" style={styles.subtitle}>
+          Sign in to save your progress and access all features
+        </ThemedText>
+      </Animated.View>
+      
+      <Animated.View entering={FadeInDown.delay(200)}>
+        <View style={styles.inputContainer}>
+          <TextInput
+            label="Email"
+            mode="outlined"
+            onChangeText={(text) => setEmail(text)}
+            value={email}
+            placeholder="email@address.com"
+            autoCapitalize="none"
+            keyboardType="email-address"
+            style={styles.input}
+            outlineColor={theme.colors.outline}
+            activeOutlineColor={theme.colors.primary}
+          />
+        </View>
+        
+        <View style={styles.inputContainer}>
+          <TextInput
+            label="Password"
+            mode="outlined"
+            onChangeText={(text) => setPassword(text)}
+            value={password}
+            secureTextEntry={true}
+            placeholder="Password"
+            autoCapitalize="none"
+            style={styles.input}
+            outlineColor={theme.colors.outline}
+            activeOutlineColor={theme.colors.primary}
+          />
+        </View>
+      </Animated.View>
+      
+      <Animated.View entering={FadeInDown.delay(300)} style={styles.buttonContainer}>
+        <Button 
+          mode="contained"
+          disabled={loading}
+          onPress={() => signInWithEmail()}
+          style={styles.primaryButton}
+          contentStyle={styles.buttonContent}
+          loading={loading}
+        >
+          Sign In
         </Button>
-        <Button disabled={loading} onPress={() => signUpWithEmail()}>
-          Sign up
+        
+        <Button 
+          mode="outlined"
+          disabled={loading}
+          onPress={() => signUpWithEmail()}
+          style={styles.secondaryButton}
+          contentStyle={styles.buttonContent}
+        >
+          Create Account
         </Button>
-      </View>
+      </Animated.View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 40,
-    padding: 12,
+    padding: 0,
   },
-  verticallySpaced: {
-    paddingTop: 4,
-    paddingBottom: 4,
-    alignSelf: 'stretch',
+  title: {
+    textAlign: 'center',
+    marginBottom: 8,
+    color: theme.colors.primary,
   },
-  mt20: {
+  subtitle: {
+    textAlign: 'center',
+    marginBottom: 30,
+    opacity: 0.8,
+    lineHeight: 20,
+  },
+  inputContainer: {
+    marginBottom: 16,
+  },
+  input: {
+    backgroundColor: theme.colors.surface,
+  },
+  buttonContainer: {
     marginTop: 20,
+    gap: 12,
+  },
+  primaryButton: {
+    borderRadius: 12,
+    elevation: 2,
+  },
+  secondaryButton: {
+    borderRadius: 12,
+    borderColor: theme.colors.primary,
+  },
+  buttonContent: {
+    paddingVertical: 8,
   },
 })

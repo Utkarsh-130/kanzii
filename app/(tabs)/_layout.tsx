@@ -1,41 +1,106 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { theme } from '@/components/theme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const colors = Colors[colorScheme ?? 'dark'];
 
   return (
     <View style={styles.container}>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarActiveTintColor: colors.primary,
+          tabBarInactiveTintColor: colors.tabIconDefault,
           headerShown: false,
           tabBarButton: HapticTab,
-          tabBarBackground: TabBarBackground,
-          tabBarStyle: {
-            ...styles.tabBar,
-            backgroundColor: Colors[colorScheme ?? 'light'].background,
-          },
+          tabBarStyle: styles.modernTabBar,
+          tabBarBackground: () => (
+            <LinearGradient
+              colors={[colors.surface + 'F0', colors.surfaceVariant + 'F0']}
+              style={StyleSheet.absoluteFillObject}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 1 }}
+            />
+          ),
+          tabBarLabelStyle: styles.tabBarLabel,
+          tabBarIconStyle: styles.tabBarIcon,
         }}>
         <Tabs.Screen
           name="index"
           options={{
             title: 'Home',
-            tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="house.fill" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined} 
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="HiraganaScreen"
+          options={{
+            title: 'Hiragana',
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="textformat" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="Katakana"
+          options={{
+            title: 'Katakana',
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="character.book.closed" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="KanjiFlashcards"
+          options={{
+            title: 'Kanji',
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="book.closed" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined}
+              />
+            ),
           }}
         />
         <Tabs.Screen
           name="explore"
           options={{
             title: 'Explore',
-            tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="sparkles" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined}
+              />
+            ),
           }}
         />
       </Tabs>
@@ -46,21 +111,40 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: theme.colors.background,
   },
-  tabBar: {
+  modernTabBar: {
     position: 'absolute',
-    bottom: 25, // Adjusted to make it closer to the bottom
-    left: 30,
+    bottom: 30,
+    left: 20,
     right: 20,
-    height: 60, // Reduced height for a smaller tab bar
-    borderRadius: 25, // Increased border radius for more rounded corners
-    elevation: 10
-, // For Android shadow
-    shadowColor: '#000', // For iOS shadow
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    alignItems: 'center',
-    justifyContent: 'center',
+    height: 70,
+    borderRadius: 25,
+    elevation: 15,
+    shadowColor: theme.colors.shadowColor,
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    borderWidth: 1,
+    borderColor: theme.colors.outline + '30',
+    paddingBottom: 10,
+    paddingTop: 10,
+    backgroundColor: 'transparent',
+    overflow: 'hidden',
+  },
+  tabBarLabel: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginTop: 4,
+    letterSpacing: 0.3,
+  },
+  tabBarIcon: {
+    marginBottom: -3,
+  },
+  activeIcon: {
+    transform: [{ scale: 1.1 }],
   },
 });

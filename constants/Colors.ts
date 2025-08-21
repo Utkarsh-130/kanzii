@@ -1,26 +1,42 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Modern aesthetic colors for Japanese learning app
+ * Focused on dark theme with beautiful gradients and appealing colors
  */
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const tintColorLight = '#6200EE';
+const tintColorDark = '#BB86FC';
 
 export const Colors = {
   light: {
     text: '#11181C',
-    background: '#fff',
+    background: '#ffffff',
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
+    surface: '#f5f5f5',
+    primary: '#6200EE',
+    secondary: '#03DAC6',
+    accent: '#FF6B6B',
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: '#FFFFFF',
+    background: '#121212',
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+    icon: '#B0BEC5',
+    tabIconDefault: '#938F99',
     tabIconSelected: tintColorDark,
+    surface: '#1E1E1E',
+    surfaceVariant: '#2C2C2C',
+    primary: '#BB86FC',
+    secondary: '#03DAC6',
+    accent: '#FF6B6B',
+    accentSecondary: '#4ECDC4',
+    gradient1: '#667eea',
+    gradient2: '#764ba2',
+    cardBackground: '#1E1E1E',
+    cardBorder: '#383838',
+    shadowColor: '#000000',
+    outline: '#938F99',
   },
 };
