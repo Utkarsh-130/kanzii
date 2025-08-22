@@ -217,12 +217,11 @@ const AuthenticatedWelcomeSection = ({ session }: { session: Session }) => {
               </ThemedText>
             </View>
             <IconButton
-              icon="account-cog"
+              icon="cog"
               iconColor={theme.colors.primary}
               size={24}
               onPress={() => {
-                // You can create a profile modal or navigate to profile screen
-                Alert.alert('Profile', 'Profile settings coming soon!');
+                router.push('/settings');
               }}
             />
           </View>
@@ -274,50 +273,6 @@ const UserProgressCard = ({ session }: { session: Session }) => (
   </Animated.View>
 );
 
-const QuickActions = ({ session }: { session: Session }) => (
-  <Animated.View entering={FadeInUp.delay(400)} style={styles.quickActionsSection}>
-    <ThemedText type="subtitle" style={styles.quickActionsTitle}>
-      Quick Actions
-    </ThemedText>
-    <View style={styles.quickActionsGrid}>
-      <Surface style={styles.quickActionCard} elevation={2}>
-        <IconButton
-          icon="account-edit"
-          iconColor={theme.colors.primary}
-          size={32}
-          onPress={() => {
-            // Navigate to profile or show profile modal
-            Alert.alert('Profile', 'Edit your profile settings');
-          }}
-        />
-        <ThemedText type="default" style={styles.quickActionText}>
-          Edit Profile
-        </ThemedText>
-      </Surface>
-      
-      <Surface style={styles.quickActionCard} elevation={2}>
-        <IconButton
-          icon="logout"
-          iconColor={theme.colors.error}
-          size={32}
-          onPress={() => {
-            Alert.alert(
-              'Sign Out',
-              'Are you sure you want to sign out?',
-              [
-                { text: 'Cancel', style: 'cancel' },
-                { text: 'Sign Out', onPress: () => supabase.auth.signOut() }
-              ]
-            );
-          }}
-        />
-        <ThemedText type="default" style={styles.quickActionText}>
-          Sign Out
-        </ThemedText>
-      </Surface>
-    </View>
-  </Animated.View>
-);
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null);
@@ -399,7 +354,7 @@ export default function App() {
               {/* Features Preview */}
               <Animated.View entering={FadeInUp.delay(200)} style={styles.featuresPreview}>
                 <ThemedText type="subtitle" style={styles.featuresTitle}>
-                  What You'll Learn
+                  What You&apos;ll Learn
                 </ThemedText>
                 <View style={styles.featuresList}>
                   <View style={styles.featureItem}>
@@ -464,7 +419,6 @@ export default function App() {
             <AuthenticatedWelcomeSection session={session} />
             <UserProgressCard session={session} />
             <LearningCards />
-            <QuickActions session={session} />
           </ScrollView>
         </SafeAreaView>
       </LinearGradient>

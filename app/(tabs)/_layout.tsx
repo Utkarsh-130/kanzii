@@ -1,13 +1,13 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import { theme } from '@/components/theme';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { theme } from '@/components/theme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -97,6 +97,20 @@ export default function TabLayout() {
               <IconSymbol 
                 size={focused ? 28 : 24} 
                 name="sparkles" 
+                color={color}
+                style={focused ? styles.activeIcon : undefined}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="settings"
+          options={{
+            title: 'Settings',
+            tabBarIcon: ({ color, focused }) => (
+              <IconSymbol 
+                size={focused ? 28 : 24} 
+                name="gearshape.fill" 
                 color={color}
                 style={focused ? styles.activeIcon : undefined}
               />
