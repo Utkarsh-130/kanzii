@@ -1,0 +1,72 @@
+{
+  "日": {
+    "meaning": "day, sun, Japan, counter for days",
+    "onyomi": "ニチ (nichi), ジツ (jitsu)",
+    "kunyomi": "ひ (hi), -び (-bi), -か (-ka)",
+    "usage": "今日はいい天気です。(Kyō wa ii tenki desu. - Today's weather is good.)",
+    "level": "N5"
+  },
+  "人": {
+    "meaning": "person",
+    "onyomi": "ジン (jin), ニン (nin)",
+    "kunyomi": "ひと (hito)",
+    "usage": "あの人は誰ですか。(Ano hito wa dare desu ka. - Who is that person?)",
+    "level": "N5"
+  },
+  "大": {
+    "meaning": "large, big",
+    "onyomi": "ダイ (dai), タイ (tai)",
+    "kunyomi": "おお(きい) (oo[kii])",
+    "usage": "これは大きい犬です。(Kore wa ookii inu desu. - This is a big dog.)",
+    "level": "N5"
+  },
+  "本": {
+    "meaning": "book, present, true, counter for long cylindrical things",
+    "onyomi": "ホン (hon)",
+    "kunyomi": "もと (moto)",
+    "usage": "この本は面白いです。(Kono hon wa omoshiroi desu. - This book is interesting.)",
+    "level": "N5"
+  },
+  "学": {
+    "meaning": "study, learning, science",
+    "onyomi": "ガク (gaku)",
+    "kunyomi": "まな(ぶ) (mana[bu])",
+    "usage": "毎日日本語を学びます。(Mainichi Nihongo o manabimasu. - I study Japanese every day.)",
+    "level": "N5"
+  },
+  "月": {
+    "meaning": "month, moon",
+    "onyomi": "ゲツ (getsu), ガツ (gatsu)",
+    "kunyomi": "つき (tsuki)",
+    "usage": "来月、旅行します。(Raigetsu, ryokō shimasu. - I will travel next month.)",
+    "level": "N5"
+  },
+  "水": {
+    "meaning": "water",
+    "onyomi": "スイ (sui)",
+    "kunyomi": "みず (mizu)",
+    "usage": "水を飲みます。(Mizu o nomimasu. - I drink water.)",
+    "level": "N5"
+  },
+  "火": {
+    "meaning": "fire",
+    "onyomi": "カ (ka)",
+    "kunyomi": "ひ (hi), び (bi), ほ (ho)",
+    "usage": "火をつけます。(Hi o tsukemasu. - I light a fire.)",
+    "level": "N5"
+  },
+  "山": {
+    "meaning": "mountain",
+    "onyomi": "サン (san), セン (sen)",
+    "kunyomi": "やま (yama)",
+    "usage": "山に登ります。(Yama ni noborimasu. - I climb a mountain.)",
+    "level": "N5"
+  },
+  "車": {
+    "meaning": "car, wheel",
+    "onyomi": "シャ (sha)",
+    "kunyomi": "くるま (kuruma)",
+    "usage": "車で来ました。(Kuruma de kimashita. - I came by car.)",
+    "level": "N5"
+  }
+}
