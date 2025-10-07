@@ -1,0 +1,908 @@
+{
+  "政": {
+    "meaning": "Politics, government",
+    "onyomi": "セイ (sei)",
+    "kunyomi": "まつりごと (matsurigoto)",
+    "usage": "政治について話しましょう。(Seiji ni tsuite hanashimashou. - Let's talk about politics.)"
+  },
+  "議": {
+    "meaning": "Deliberation, consultation, debate",
+    "onyomi": "ギ (gi)",
+    "kunyomi": "-",
+    "usage": "会議で意見を述べます。(Kaigi de iken wo nobemasu. - I state my opinion at the meeting.)"
+  },
+  "民": {
+    "meaning": "People, nation, subjects",
+    "onyomi": "ミン (min)",
+    "kunyomi": "たみ (tami)",
+    "usage": "国民の意見を聞く。(Kokumin no iken wo kiku. - Listen to the opinions of the people.)"
+  },
+  "連": {
+    "meaning": "Take along, lead, join, connect",
+    "onyomi": "レン (ren)",
+    "kunyomi": "つら(なる), つ(れる) (tsura(naru), tsu(reru))",
+    "usage": "友達を連れて行きます。(Tomodachi wo tsurete ikimasu. - I will take my friend along.)"
+  },
+  "対": {
+    "meaning": "Opposite, even, equal, versus, anti-, compare",
+    "onyomi": "タイ, ツイ (tai, tsui)",
+    "kunyomi": "-",
+    "usage": "彼と対話します。(Kare to taiwa shimasu. - I will have a dialogue with him.)"
+  },
+  "部": {
+    "meaning": "Section, bureau, dept, class, copy, part, portion",
+    "onyomi": "ブ (bu)",
+    "kunyomi": "-",
+    "usage": "この本は三部構成です。(Kono hon wa sanbu kousei desu. - This book has a three-part structure.)"
+  },
+  "合": {
+    "meaning": "Fit, suit, join",
+    "onyomi": "ゴウ, ガッ, カッ (gou, ga, ka)",
+    "kunyomi": "あ(う), あい (a(u), ai)",
+    "usage": "意見が合います。(Iken ga aimasu. - Our opinions match.)"
+  },
+  "市": {
+    "meaning": "Market, city, town",
+    "onyomi": "シ (shi)",
+    "kunyomi": "いち (ichi)",
+    "usage": "市場で買い物をします。(Ichiba de kaimono wo shimasu. - I shop at the market.)"
+  },
+  "内": {
+    "meaning": "Inside, within, between, among, house, home",
+    "onyomi": "ナイ (nai)",
+    "kunyomi": "うち (uchi)",
+    "usage": "家の中にいます。(Ie no uchi ni imasu. - I am inside the house.)"
+  },
+  "相": {
+    "meaning": "Inter-, mutual, together, each other, minister of state",
+    "onyomi": "ソウ, ショウ (sou, shou)",
+    "kunyomi": "あい (ai)",
+    "usage": "お互いに助け合います。(Otagai ni tasukeaimasu. - We help each other.)"
+  },
+  "定": {
+    "meaning": "Determine, fix, establish, decide",
+    "onyomi": "テイ, ジョウ (tei, jou)",
+    "kunyomi": "さだ(める) (sada(meru))",
+    "usage": "目標を定めます。(Mokuhyou wo sadamemasu. - I set a goal.)"
+  },
+  "回": {
+    "meaning": "-times, round, revolve, counter",
+    "onyomi": "カイ (kai)",
+    "kunyomi": "まわ(す) (mawa(su))",
+    "usage": "地球は太陽の周りを回ります。(Chikyuu wa taiyou no mawari wo mawarimasu. - The Earth revolves around the Sun.)"
+  },
+  "選": {
+    "meaning": "Elect, select, choose, prefer",
+    "onyomi": "セン (sen)",
+    "kunyomi": "えら(bu) (era(bu))",
+    "usage": "好きな色を選びます。(Suki na iro wo erabimasu. - I choose my favorite color.)"
+  },
+  "米": {
+    "meaning": "Rice, USA, meter",
+    "onyomi": "ベイ, マイ, メエトル (bei, mai, meetoru)",
+    "kunyomi": "こめ (kome)",
+    "usage": "日本は米をたくさん生産します。(Nihon wa kome wo takusan seisan shimasu. - Japan produces a lot of rice.)"
+  },
+  "実": {
+    "meaning": "Reality, truth",
+    "onyomi": "ジツ (jitsu)",
+    "kunyomi": "み, みの(る) (mi, mino(ru))",
+    "usage": "夢が実現しました。(Yume ga jitsugen shimashita. - My dream came true.)"
+  },
+  "関": {
+    "meaning": "Connection, barrier, gateway, involve, concerning",
+    "onyomi": "カン (kan)",
+    "kunyomi": "せき, かか(わる) (seki, kaka(waru))",
+    "usage": "この件に関わっています。(Kono ken ni kakawatte imasu. - I am involved in this matter.)"
+  },
+  "決": {
+    "meaning": "Decide, fix, agree upon, appoint",
+    "onyomi": "ケツ (ketsu)",
+    "kunyomi": "き(める) (ki(meru))",
+    "usage": "旅行に行くことを決めました。(Ryokou ni iku koto wo kimemashita. - I decided to go on a trip.)"
+  },
+  "全": {
+    "meaning": "Whole, entire, all, complete, fulfill",
+    "onyomi": "ゼン (zen)",
+    "kunyomi": "まった(く), すべ(て) (matta(ku), sube(te))",
+    "usage": "全てを理解しました。(Subete wo rikai shimashita. - I understood everything.)"
+  },
+  "表": {
+    "meaning": "Surface, table, chart, diagram",
+    "onyomi": "ヒョウ (hyou)",
+    "kunyomi": "おもて, あらわ(す) (omote, arawa(su))",
+    "usage": "意見を表します。(Iken wo arawashimasu. - I express my opinion.)"
+  },
+  "戦": {
+    "meaning": "War, battle, match",
+    "onyomi": "セン (sen)",
+    "kunyomi": "いくさ, たたか(う) (ikusa, tataka(u))",
+    "usage": "戦争は悲しいことです。(Sensou wa kanashii koto desu. - War is a sad thing.)"
+  },
+  "経": {
+    "meaning": "Longitude, pass thru, expire, warp",
+    "onyomi": "ケイ (kei)",
+    "kunyomi": "へ(る), た(つ) (he(ru), ta(tsu))",
+    "usage": "長い年月を経る。(Nagai nengetsu wo heru. - Pass through many years.)"
+  },
+  "最": {
+    "meaning": "Utmost, most, extreme",
+    "onyomi": "サイ (sai)",
+    "kunyomi": "もっと(も) (motto(mo))",
+    "usage": "最高の気分です。(Saikou no kibun desu. - I feel the best.)"
+  },
+  "現": {
+    "meaning": "Present, existing, actual",
+    "onyomi": "ゲン (gen)",
+    "kunyomi": "あらわ(れる), うつ(つ) (arawa(reru), utsu(tsu))",
+    "usage": "問題が現れました。(Mondai ga arawaremashita. - A problem appeared.)"
+  },
+  "調": {
+    "meaning": "Tune, tone, meter, prepare, investigate",
+    "onyomi": "チョウ (chou)",
+    "kunyomi": "しら(べる), ととの(う) (shira(beru), totono(u))",
+    "usage": "事件を調べます。(Jiken wo shirabemasu. - I investigate the case.)"
+  },
+  "化": {
+    "meaning": "Change, take the form of, influence, enchant, delude, -ization",
+    "onyomi": "カ, ケ (ka, ke)",
+    "kunyomi": "ば(ける), ふ(ける) (ba(keru), fu(keru))",
+    "usage": "水が氷に変化する。(Mizu ga koori ni henka suru. - Water changes into ice.)"
+  },
+  "当": {
+    "meaning": "Hit, right, appropriate",
+    "onyomi": "トウ (tou)",
+    "kunyomi": "あ(たる) (a(taru))",
+    "usage": "宝くじが当たりました。(Takarakuji ga atarimashita. - I won the lottery.)"
+  },
+  "約": {
+    "meaning": "Promise, approximately, shrink",
+    "onyomi": "ヤク (yaku)",
+    "kunyomi": "つづ(まる) (tsuzu(maru))",
+    "usage": "約束を守ります。(Yakusoku wo mamorimasu. - I keep my promise.)"
+  },
+  "首": {
+    "meaning": "Neck",
+    "onyomi": "シュ (shu)",
+    "kunyomi": "くび (kubi)",
+    "usage": "首が痛いです。(Kubi ga itai desu. - My neck hurts.)"
+  },
+  "法": {
+    "meaning": "Method, law, rule, principle, model, system",
+    "onyomi": "ホウ (hou)",
+    "kunyomi": "のり (nori)",
+    "usage": "法律を守る。(Houritsu wo mamoru. - Obey the law.)"
+  },
+  "性": {
+    "meaning": "Sex, gender, nature",
+    "onyomi": "セイ, ショウ (sei, shou)",
+    "kunyomi": "-",
+    "usage": "この問題は複雑な性質を持っています。(Kono mondai wa fukuzatsu na seishitsu wo motte imasu. - This problem has a complex nature.)"
+  },
+  "的": {
+    "meaning": "Mark, target, object, adjective ending",
+    "onyomi": "テキ (teki)",
+    "kunyomi": "-",
+    "usage": "効果的な方法を見つけました。(Kouka-teki na houhou wo mitsukemashita. - I found an effective method.)"
+  },
+  "要": {
+    "meaning": "Need, main point, essence, pivot",
+    "onyomi": "ヨウ (you)",
+    "kunyomi": "い(る), かなめ (i(ru), kaname)",
+    "usage": "この書類が必要です。(Kono shorui ga hitsuyou desu. - This document is necessary.)"
+  },
+  "制": {
+    "meaning": "System, law, rule",
+    "onyomi": "セイ (sei)",
+    "kunyomi": "-",
+    "usage": "新しい制度が導入されました。(Atarashii seido ga donyuu saremashita. - A new system was introduced.)"
+  },
+  "治": {
+    "meaning": "Reign, cure, heal",
+    "onyomi": "ジ, チ (ji, chi)",
+    "kunyomi": "おさ(める), なお(る) (osa(meru), nao(ru))",
+    "usage": "病気が治りました。(Byouki ga naorimashita. - My illness was cured.)"
+  },
+  "務": {
+    "meaning": "Task, duties",
+    "onyomi": "ム (mu)",
+    "kunyomi": "つと(める) (tsuto(meru))",
+    "usage": "重要な任務を果たす。(Juuyou na ninmu wo hatasu. - Fulfill an important duty.)"
+  },
+  "成": {
+    "meaning": "Turn into, become, get, grow, elapse",
+    "onyomi": "セイ, ジョウ (sei, jou)",
+    "kunyomi": "な(る) (na(ru))",
+    "usage": "大人になりました。(Otona ni narimashita. - I became an adult.)"
+  },
+  "期": {
+    "meaning": "Period, time, date, term",
+    "onyomi": "キ, ゴ (ki, go)",
+    "kunyomi": "-",
+    "usage": "試験の期間は一週間です。(Shiken no kikan wa isshuukan desu. - The exam period is one week.)"
+  },
+  "取": {
+    "meaning": "Take, fetch",
+    "onyomi": "シュ (shu)",
+    "kunyomi": "と(る) (to(ru))",
+    "usage": "本を取ってください。(Hon wo totte kudasai. - Please take the book.)"
+  },
+  "都": {
+    "meaning": "Metropolis, capital",
+    "onyomi": "ト, ツ (to, tsu)",
+    "kunyomi": "みやこ (miyako)",
+    "usage": "京都は美しい古都です。(Kyouto wa utsukushii koto desu. - Kyoto is a beautiful ancient capital.)"
+  },
+  "和": {
+    "meaning": "Harmony, Japanese style, peace",
+    "onyomi": "ワ, オ (wa, o)",
+    "kunyomi": "やわ(らぐ), なご(む) (yawa(ragu), nago(mu))",
+    "usage": "平和な世界を願う。(Heiwa na sekai wo negau. - Wish for a peaceful world.)"
+  },
+  "機": {
+    "meaning": "Machine, airplane, opportunity",
+    "onyomi": "キ (ki)",
+    "kunyomi": "はた (hata)",
+    "usage": "飛行機に乗ります。(Hikouki ni norimasu. - I ride an airplane.)"
+  },
+  "平": {
+    "meaning": "Even, flat, peace",
+    "onyomi": "ヘイ, ビョウ (hei, byou)",
+    "kunyomi": "たい(ら), ひら (tai(ra), hira)",
+    "usage": "平和な一日でした。(Heiwa na ichinichi deshita. - It was a peaceful day.)"
+  },
+  "加": {
+    "meaning": "Add, addition, increase, join",
+    "onyomi": "カ (ka)",
+    "kunyomi": "くわ(える) (kuwa(eru))",
+    "usage": "塩を加えてください。(Shio wo kuwaete kudasai. - Please add salt.)"
+  },
+  "受": {
+    "meaning": "Accept, undergo, answer (phone), take",
+    "onyomi": "ジュ (ju)",
+    "kunyomi": "う(ける) (u(keru))",
+    "usage": "プレゼントを受け取ります。(Purezento wo uketorimasu. - I receive a present.)"
+  },
+  "続": {
+    "meaning": "Continue, series, sequel",
+    "onyomi": "ゾク (zoku)",
+    "kunyomi": "つづく (tsuzuku)",
+    "usage": "雨が降り続きます。(Ame ga furitsuzukimasu. - The rain continues to fall.)"
+  },
+  "進": {
+    "meaning": "Advance, proceed",
+    "onyomi": "シン (shin)",
+    "kunyomi": "すす(む) (susu(mu))",
+    "usage": "前に進みます。(Mae ni susumimasu. - I move forward.)"
+  },
+  "数": {
+    "meaning": "Number, strength, fate, law, figures",
+    "onyomi": "スウ (suu)",
+    "kunyomi": "かず, かぞ(える) (kazu, kazo(eru))",
+    "usage": "数を数えます。(Kazu wo kazoemasu. - I count numbers.)"
+  },
+  "記": {
+    "meaning": "Scribe, account, narrative",
+    "onyomi": "キ (ki)",
+    "kunyomi": "しる(す) (shiru(su))",
+    "usage": "日記を書きます。(Nikki wo kakimasu. - I write a diary.)"
+  },
+  "初": {
+    "meaning": "First time, beginning",
+    "onyomi": "ショ (sho)",
+    "kunyomi": "はじ(め), はつ (haji(me), hatsu)",
+    "usage": "初めて日本に行きます。(Hajimete Nihon ni ikimasu. - I will go to Japan for the first time.)"
+  },
+  "指": {
+    "meaning": "Finger, point to, indicate",
+    "onyomi": "シ (shi)",
+    "kunyomi": "ゆび, さ(す) (yubi, sa(su))",
+    "usage": "指を指す。(Yubi wo sasu. - Point a finger.)"
+  },
+  "権": {
+    "meaning": "Authority, power, rights",
+    "onyomi": "ケン (ken)",
+    "kunyomi": "-",
+    "usage": "彼は発言権を持っています。(Kare wa hatsugenken wo motte imasu. - He has the right to speak.)"
+  },
+  "支": {
+    "meaning": "Branch, support, sustain",
+    "onyomi": "シ (shi)",
+    "kunyomi": "ささ(える) (sasa(eru))",
+    "usage": "家族を支えます。(Kazoku wo sasaemasu. - I support my family.)"
+  },
+  "産": {
+    "meaning": "Products, bear, give birth",
+    "onyomi": "サン (san)",
+    "kunyomi": "う(む), む(す) (u(mu), mu(su))",
+    "usage": "この工場は車を生産しています。(Kono koujou wa kuruma wo seisan shite imasu. - This factory produces cars.)"
+  },
+  "点": {
+    "meaning": "Spot, point, mark",
+    "onyomi": "テン (ten)",
+    "kunyomi": "つ(ける) (tsu(keru))",
+    "usage": "テストの点数が高い。(Tesuto no tensuu ga takai. - The test score is high.)"
+  },
+  "報": {
+    "meaning": "Report, news, reward",
+    "onyomi": "ホウ (hou)",
+    "kunyomi": "むく(いる) (mukku(iru))",
+    "usage": "ニュースを報道します。(Nyuusu wo houdou shimasu. - I report the news.)"
+  },
+  "済": {
+    "meaning": "Settle, relieve, finish",
+    "onyomi": "サイ, セイ (sai, sei)",
+    "kunyomi": "す(む) (su(mu))",
+    "usage": "支払いが済みました。(Shiharai ga sumimashita. - The payment has been completed.)"
+  },
+  "活": {
+    "meaning": "Living",
+    "onyomi": "カツ (katsu)",
+    "kunyomi": "-",
+    "usage": "活発な議論が交わされた。(Kappatsu na giron ga kawasareta. - A lively discussion took place.)"
+  },
+  "原": {
+    "meaning": "Original, primitive, field",
+    "onyomi": "ゲン (gen)",
+    "kunyomi": "はら (hara)",
+    "usage": "元の場所に戻ります。(Moto no basho ni modorimasu. - I return to the original place.)"
+  },
+  "共": {
+    "meaning": "Together, both, neither",
+    "onyomi": "キョウ (kyou)",
+    "kunyomi": "とも (tomo)",
+    "usage": "彼と共に働きます。(Kare to tomo ni hatarakimasu. - I work together with him.)"
+  },
+  "得": {
+    "meaning": "Gain, get, find, earn, acquire, can, may, able to, profit",
+    "onyomi": "トク (toku)",
+    "kunyomi": "え(る) (e(ru))",
+    "usage": "情報を得る。(Jouhou wo eru. - Obtain information.)"
+  },
+  "解": {
+    "meaning": "Unravel, explanation",
+    "onyomi": "カイ, ゲ (kai, ge)",
+    "kunyomi": "と(く), ほど(く) (to(ku), hodo(ku))",
+    "usage": "問題を解決します。(Mondai wo kaiketsu shimasu. - I solve the problem.)"
+  },
+  "交": {
+    "meaning": "Mingle, mixing, association, coming & going",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "まじ(わる), ま(ぜる), か(わす) (maji(waru), ma(zeru), ka(wasu))",
+    "usage": "友達と交流します。(Tomodachi to kouryuu shimasu. - I interact with friends.)"
+  },
+  "資": {
+    "meaning": "Assets, resources, capital, funds, data, be conducive to",
+    "onyomi": "シ (shi)",
+    "kunyomi": "-",
+    "usage": "彼は豊富な知識を持っています。(Kare wa houfu na chishiki wo motte imasu. - He has abundant knowledge.)"
+  },
+  "予": {
+    "meaning": "Beforehand, previous, myself, I",
+    "onyomi": "ヨ, シャ (yo, sha)",
+    "kunyomi": "あらかじ(め) (arakaji(me))",
+    "usage": "事前に準備します。(Jizen ni junbi shimasu. - I prepare in advance.)"
+  },
+  "向": {
+    "meaning": "Facing, beyond",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "む(く), むか(い) (mu(ku), muka(i))",
+    "usage": "目標に向かって進む。(Mokuhyou ni mukatte susumu. - Move towards the goal.)"
+  },
+  "際": {
+    "meaning": "Occasion, time",
+    "onyomi": "サイ (sai)",
+    "kunyomi": "きわ (kiwa)",
+    "usage": "その際にはご連絡ください。(Sono sai ni wa gorenraku kudasai. - Please contact me on that occasion.)"
+  },
+  "勝": {
+    "meaning": "Victory, win",
+    "onyomi": "ショウ (shou)",
+    "kunyomi": "か(つ), まさ(る) (ka(tsu), masa(ru))",
+    "usage": "試合に勝ちました。(Shiai ni kachimashita. - I won the match.)"
+  },
+  "面": {
+    "meaning": "Mask, face, features, surface",
+    "onyomi": "メン (men)",
+    "kunyomi": "おも, おもて, つら (omo, omote, tsura)",
+    "usage": "顔の表面。(Kao no hyoumen. - Surface of the face.)"
+  },
+  "告": {
+    "meaning": "Revelation, inform",
+    "onyomi": "コク (koku)",
+    "kunyomi": "つ(げる) (tsu(geru))",
+    "usage": "真実を告げます。(Shinjitsu wo tsugemasu. - I tell the truth.)"
+  },
+  "反": {
+    "meaning": "Anti-",
+    "onyomi": "ハン (han)",
+    "kunyomi": "そ(る) (so(ru))",
+    "usage": "反対意見を述べる。(Hantai iken wo noberu. - State an opposing opinion.)"
+  },
+  "判": {
+    "meaning": "Judgement, signature",
+    "onyomi": "ハン (han)",
+    "kunyomi": "-",
+    "usage": "裁判で判決が下された。(Saiban de hanketsu ga kudasa reta. - A verdict was handed down in court.)"
+  },
+  "認": {
+    "meaning": "Acknowledge, witness, recognize",
+    "onyomi": "ニン (nin)",
+    "kunyomi": "みと(める), したた(める) (mito(meru), shitata(meru))",
+    "usage": "間違いを認めます。(Machigai wo mitomemasu. - I admit my mistake.)"
+  },
+  "参": {
+    "meaning": "Going, coming, participate",
+    "onyomi": "サン (san)",
+    "kunyomi": "まい(る) (mai(ru))",
+    "usage": "会議に参加します。(Kaigi ni sanka shimasu. - I participate in the meeting.)"
+  },
+  "利": {
+    "meaning": "Profit, advantage, benefit",
+    "onyomi": "リ (ri)",
+    "kunyomi": "き(く) (ki(ku))",
+    "usage": "この薬はよく効きます。(Kono kusuri wa yoku kikimasu. - This medicine is very effective.)"
+  },
+  "組": {
+    "meaning": "Association, assemble, unite",
+    "onyomi": "ソ (so)",
+    "kunyomi": "く(む), くみ (ku(mu), kumi)",
+    "usage": "チームを組みます。(Chiimu wo kumimasu. - I form a team.)"
+  },
+  "信": {
+    "meaning": "Faith, truth, trust",
+    "onyomi": "シン (shin)",
+    "kunyomi": "-",
+    "usage": "彼の言葉を信じます。(Kare no kotoba wo shinjimasu. - I believe his words.)"
+  },
+  "在": {
+    "meaning": "Exist, outskirts",
+    "onyomi": "ザイ (zai)",
+    "kunyomi": "あ(る) (a(ru))",
+    "usage": "彼は現在日本に在住しています。(Kare wa genzai Nihon ni zaijuu shite imasu. - He currently resides in Japan.)"
+  },
+  "件": {
+    "meaning": "Affair, case, matter",
+    "onyomi": "ケン (ken)",
+    "kunyomi": "くだん (kudan)",
+    "usage": "この件について話し合いましょう。(Kono ken ni tsuite hanashiaimashou. - Let's discuss this matter.)"
+  },
+  "側": {
+    "meaning": "Side, lean, oppose",
+    "onyomi": "ソク (soku)",
+    "kunyomi": "がわ, そば (gawa, soba)",
+    "usage": "道のこちら側。(Michi no kochiragawa. - This side of the road.)"
+  },
+  "任": {
+    "meaning": "Responsibility, duty",
+    "onyomi": "ニン (nin)",
+    "kunyomi": "まか(せる) (maka(seru))",
+    "usage": "彼に仕事を任せます。(Kare ni shigoto wo makasemasu. - I entrust the work to him.)"
+  },
+  "引": {
+    "meaning": "Pull, tug, jerk",
+    "onyomi": "イン (in)",
+    "kunyomi": "ひ(く) (hi(ku))",
+    "usage": "ドアを引いてください。(Doa wo hiite kudasai. - Please pull the door.)"
+  },
+  "求": {
+    "meaning": "Request, want, demand",
+    "onyomi": "キュウ (kyuu)",
+    "kunyomi": "もと(める) (moto(meru))",
+    "usage": "助けを求めます。(Tasuke wo motomemasu. - I ask for help.)"
+  },
+  "所": {
+    "meaning": "Place, extent",
+    "onyomi": "ショ (sho)",
+    "kunyomi": "ところ (tokoro)",
+    "usage": "私の住所は東京です。(Watashi no juusho wa Toukyou desu. - My address is Tokyo.)"
+  },
+  "次": {
+    "meaning": "Next, order",
+    "onyomi": "ジ, シ (ji, shi)",
+    "kunyomi": "つ(ぐ), つぎ (tsu(gu), tsugi)",
+    "usage": "次の駅で降ります。(Tsugi no eki de orimasu. - I get off at the next station.)"
+  },
+  "昨": {
+    "meaning": "Yesterday, previous",
+    "onyomi": "サク (saku)",
+    "kunyomi": "-",
+    "usage": "昨日の天気は晴れでした。(Kinou no tenki wa hare deshita. - Yesterday's weather was sunny.)"
+  },
+  "論": {
+    "meaning": "Argument, discourse",
+    "onyomi": "ロン (ron)",
+    "kunyomi": "あげつら(う) (agetsura(u))",
+    "usage": "論文を書きます。(Ronbun wo kakimasu. - I write a thesis.)"
+  },
+  "官": {
+    "meaning": "Bureaucrat, the government, organ",
+    "onyomi": "カン (kan)",
+    "kunyomi": "-",
+    "usage": "政府の役人。(Seifu no yakunin. - Government official.)"
+  },
+  "増": {
+    "meaning": "Increase, add",
+    "onyomi": "ゾウ (zou)",
+    "kunyomi": "ま(す), ふ(える) (ma(su), fu(eru))",
+    "usage": "人口が増えています。(Jinkou ga fuete imasu. - The population is increasing.)"
+  },
+  "係": {
+    "meaning": "Person in charge, connection",
+    "onyomi": "ケイ (kei)",
+    "kunyomi": "かか(る), かかり (kaka(ru), kakari)",
+    "usage": "この問題は彼に関係しています。(Kono mondai wa kare ni kankei shite imasu. - This problem is related to him.)"
+  },
+  "感": {
+    "meaning": "Emotion, feeling, sensation",
+    "onyomi": "カン (kan)",
+    "kunyomi": "-",
+    "usage": "感謝の気持ちを伝える。(Kansha no kimochi wo tsutaeru. - Convey feelings of gratitude.)"
+  },
+  "情": {
+    "meaning": "Feelings, emotion, passion",
+    "onyomi": "ジョウ, セイ (jou, sei)",
+    "kunyomi": "なさ(け) (nasa(ke))",
+    "usage": "感情を表現します。(Kanjou wo hyougen shimasu. - I express my emotions.)"
+  },
+  "投": {
+    "meaning": "Throw, discard",
+    "onyomi": "トウ (tou)",
+    "kunyomi": "な(げる) (na(geru))",
+    "usage": "ボールを投げます。(Booru wo nagemasu. - I throw a ball.)"
+  },
+  "示": {
+    "meaning": "Show, indicate, display",
+    "onyomi": "ジ, シ (ji, shi)",
+    "kunyomi": "しめ(す) (shime(su))",
+    "usage": "地図を示します。(Chizu wo shimeshimasu. - I show the map.)"
+  },
+  "変": {
+    "meaning": "Unusual, change, strange",
+    "onyomi": "ヘン (hen)",
+    "kunyomi": "か(わる) (ka(waru))",
+    "usage": "天気が変わりました。(Tenki ga kawarimashita. - The weather changed.)"
+  },
+  "打": {
+    "meaning": "Strike, hit, knock",
+    "onyomi": "ダ (da)",
+    "kunyomi": "う(つ), ぶ(つ) (u(tsu), bu(tsu))",
+    "usage": "ボールを打ちます。(Booru wo uchimasu. - I hit the ball.)"
+  },
+  "直": {
+    "meaning": "Straightaway, honesty, frankness, fix, repair",
+    "onyomi": "チョク, ジキ (choku, jiki)",
+    "kunyomi": "ただ(ちに), す(ぐ) (tada(chini), su(gu))",
+    "usage": "すぐに来てください。(Sugu ni kite kudasai. - Please come immediately.)"
+  },
+  "両": {
+    "meaning": "Both",
+    "onyomi": "リョウ (ryou)",
+    "kunyomi": "-",
+    "usage": "両親に感謝します。(Ryoushin ni kansha shimasu. - I thank both my parents.)"
+  },
+  "式": {
+    "meaning": "Style, ceremony",
+    "onyomi": "シキ (shiki)",
+    "kunyomi": "-",
+    "usage": "結婚式に出席します。(Kekkonshiki ni shusseki shimasu. - I attend a wedding ceremony.)"
+  },
+  "確": {
+    "meaning": "Assurance, firm, confirm",
+    "onyomi": "カク (kaku)",
+    "kunyomi": "たし(か) (tashi(ka))",
+    "usage": "事実を確認します。(Jijitsu wo kakunin shimasu. - I confirm the facts.)"
+  },
+  "果": {
+    "meaning": "Fruit, reward, carry out, achieve, complete",
+    "onyomi": "カ (ka)",
+    "kunyomi": "は(たす) (ha(tasu))",
+    "usage": "目標を果たす。(Mokuhyou wo hatasu. - Achieve a goal.)"
+  },
+  "容": {
+    "meaning": "Contain, form",
+    "onyomi": "ヨウ (you)",
+    "kunyomi": "-",
+    "usage": "この容器は水が入っています。(Kono youki wa mizu ga haitte imasu. - This container has water in it.)"
+  },
+  "必": {
+    "meaning": "Invariably, certain, inevitable",
+    "onyomi": "ヒツ (hitsu)",
+    "kunyomi": "かなら(ず) (kanara(zu))",
+    "usage": "必ず成功します。(Kanarazu seikou shimasu. - I will definitely succeed.)"
+  },
+  "演": {
+    "meaning": "Performance, act, play, render, stage",
+    "onyomi": "エン (en)",
+    "kunyomi": "-",
+    "usage": "舞台で演技します。(Butai de engi shimasu. - I perform on stage.)"
+  },
+  "歳": {
+    "meaning": "Age, year-end",
+    "onyomi": "サイ, セイ (sai, sei)",
+    "kunyomi": "-",
+    "usage": "彼は二十歳です。(Kare wa hatachi desu. - He is twenty years old.)"
+  },
+  "争": {
+    "meaning": "Contend, dispute, argue",
+    "onyomi": "ソウ (sou)",
+    "kunyomi": "あらそ(う) (araso(u))",
+    "usage": "争いを避ける。(Arasoi wo sakeru. - Avoid conflict.)"
+  },
+  "談": {
+    "meaning": "Discuss, talk",
+    "onyomi": "ダン (dan)",
+    "kunyomi": "-",
+    "usage": "友達と相談します。(Tomodachi to soudan shimasu. - I consult with my friend.)"
+  },
+  "能": {
+    "meaning": "Ability, talent, skill, capacity",
+    "onyomi": "ノウ (nou)",
+    "kunyomi": "あた(う) (ata(u))",
+    "usage": "彼は能力が高いです。(Kare wa nouryoku ga takai desu. - He has high ability.)"
+  },
+  "位": {
+    "meaning": "Rank, grade, about",
+    "onyomi": "イ (i)",
+    "kunyomi": "くらい, ぐらい (kurai, gurai)",
+    "usage": "彼は高い地位にいます。(Kare wa takai chii ni imasu. - He is in a high position.)"
+  },
+  "置": {
+    "meaning": "Placement, put, set, deposit, leave behind",
+    "onyomi": "チ (chi)",
+    "kunyomi": "お(く) (o(ku))",
+    "usage": "本を棚に置きます。(Hon wo tana ni okimasu. - I put the book on the shelf.)"
+  },
+  "流": {
+    "meaning": "Current, flow",
+    "onyomi": "リュウ, ル (ryuu, ru)",
+    "kunyomi": "なが(れる) (naga(reru))",
+    "usage": "川が流れています。(Kawa ga nagarete imasu. - The river is flowing.)"
+  },
+  "格": {
+    "meaning": "Status, rank, capacity",
+    "onyomi": "カク, コウ, キャク (kaku, kou, kyaku)",
+    "kunyomi": "-",
+    "usage": "彼は合格しました。(Kare wa goukaku shimashita. - He passed the exam.)"
+  },
+  "疑": {
+    "meaning": "Doubt, distrust",
+    "onyomi": "ギ (gi)",
+    "kunyomi": "うたが(う) (utaga(u))",
+    "usage": "彼の言葉を疑います。(Kare no kotoba wo utagaimasu. - I doubt his words.)"
+  },
+  "過": {
+    "meaning": "Overdo, exceed, go beyond",
+    "onyomi": "カ (ka)",
+    "kunyomi": "す(ぎる), よぎ(る) (su(giru), yogi(ru))",
+    "usage": "時間を過ごします。(Jikan wo sugoshimasu. - I spend time.)"
+  },
+  "局": {
+    "meaning": "Bureau, board, office",
+    "onyomi": "キョク (kyoku)",
+    "kunyomi": "-",
+    "usage": "郵便局に行きます。(Yuubinkyoku ni ikimasu. - I go to the post office.)"
+  },
+  "放": {
+    "meaning": "Set free, release",
+    "onyomi": "ホウ (hou)",
+    "kunyomi": "はな(す), ほう(る) (hana(su), hou(ru))",
+    "usage": "鳥を空に放す。(Tori wo sora ni hanasu. - Release a bird into the sky.)"
+  },
+  "常": {
+    "meaning": "Usual, ordinary, normal",
+    "onyomi": "ジョウ (jou)",
+    "kunyomi": "つね (tsune)",
+    "usage": "常識的な考え方。(Joushiki-teki na kangaekata. - Common sense way of thinking.)"
+  },
+  "状": {
+    "meaning": "Conditions, form, appearance",
+    "onyomi": "ジョウ (jou)",
+    "kunyomi": "-",
+    "usage": "現在の状況を説明します。(Genzai no joukyou wo setsumei shimasu. - I explain the current situation.)"
+  },
+  "球": {
+    "meaning": "Ball, sphere",
+    "onyomi": "キュウ (kyuu)",
+    "kunyomi": "たま (tama)",
+    "usage": "野球をします。(Yakyuu wo shimasu. - I play baseball.)"
+  },
+  "職": {
+    "meaning": "Post, employment, work",
+    "onyomi": "ショク (shoku)",
+    "kunyomi": "-",
+    "usage": "新しい仕事に就きました。(Atarashii shigoto ni tsukimashita. - I started a new job.)"
+  },
+  "与": {
+    "meaning": "Give, award",
+    "onyomi": "ヨ (yo)",
+    "kunyomi": "あた(える), あずか(る) (ata(eru), azuka(ru))",
+    "usage": "彼にチャンスを与えます。(Kare ni chansu wo ataemasu. - I give him a chance.)"
+  },
+  "供": {
+    "meaning": "Submit, offer, present, accompany",
+    "onyomi": "キョウ, ク, クウ (kyou, ku, kuu)",
+    "kunyomi": "そな(える), とも (sona(eru), tomo)",
+    "usage": "神に供物を捧げる。(Kami ni kumotsu wo sasageru. - Offer sacrifices to God.)"
+  },
+  "役": {
+    "meaning": "Duty, service, role",
+    "onyomi": "ヤク, エキ (yaku, eki)",
+    "kunyomi": "-",
+    "usage": "彼の役割は重要です。(Kare no yakuwari wa juuyou desu. - His role is important.)"
+  },
+  "構": {
+    "meaning": "Posture, build, pretend",
+    "onyomi": "コウ (kou)",
+    "kunyomi": "かま(う) (kama(u))",
+    "usage": "この建物は頑丈な構造です。(Kono tatemono wa ganjou na kouzou desu. - This building has a sturdy structure.)"
+  },
+  "割": {
+    "meaning": "Proportion, divide, cut, separate",
+    "onyomi": "カツ (katsu)",
+    "kunyomi": "わ(る), わり (wa(ru), wari)",
+    "usage": "ケーキを分けます。(Keeki wo wakemasu. - I divide the cake.)"
+  },
+  "身": {
+    "meaning": "Somebody, person",
+    "onyomi": "シン (shin)",
+    "kunyomi": "み (mi)",
+    "usage": "身分証明書を見せる。(Mibun shoumeisho wo miseru. - Show identification.)"
+  },
+  "費": {
+    "meaning": "Expense, consume",
+    "onyomi": "ヒ (hi)",
+    "kunyomi": "つい(yasu) (tsui(yasu))",
+    "usage": "費用がかかります。(Hiyou ga kakarimasu. - It costs money.)"
+  },
+  "付": {
+    "meaning": "Adhere, attach, refer to, append",
+    "onyomi": "フ (fu)",
+    "kunyomi": "つ(ける) (tsu(keru))",
+    "usage": "メモを壁に付けます。(Memo wo kabe ni tsukemasu. - I attach a memo to the wall.)"
+  },
+  "由": {
+    "meaning": "Wherefore, a reason",
+    "onyomi": "ユ, ユウ (yu, yuu)",
+    "kunyomi": "よし, よ(る) (yoshi, yo(ru))",
+    "usage": "その理由を教えてください。(Sono riyuu wo oshiete kudasai. - Please tell me the reason.)"
+  },
+  "説": {
+    "meaning": "Opinion, theory, explanation",
+    "onyomi": "セツ, ゼイ (setsu, zei)",
+    "kunyomi": "と(く) (to(ku))",
+    "usage": "理論を説明します。(Riron wo setsumei shimasu. - I explain the theory.)"
+  },
+  "難": {
+    "meaning": "Difficult, trouble, accident",
+    "onyomi": "ナン (nan)",
+    "kunyomi": "かた(い), むずか(しい), にく(い) (kata(i), muzuka(shii), niku(i))",
+    "usage": "難しい問題です。(Muzukashii mondai desu. - It's a difficult problem.)"
+  },
+  "優": {
+    "meaning": "Tenderness, kind, actor",
+    "onyomi": "ユウ, ウ (yuu, u)",
+    "kunyomi": "やさ(しい), すぐ(れる) (yasa(shii), sugu(reru))",
+    "usage": "優しい人です。(Yasashii hito desu. - He/She is a kind person.)"
+  },
+  "夫": {
+    "meaning": "Husband, man",
+    "onyomi": "フ, フウ (fu, fuu)",
+    "kunyomi": "おっと (otto)",
+    "usage": "私の夫は医者です。(Watashi no otto wa isha desu. - My husband is a doctor.)"
+  },
+  "収": {
+    "meaning": "Income, obtain, reap, pay, supply, store",
+    "onyomi": "シュウ (shuu)",
+    "kunyomi": "おさ(める) (osa(meru))",
+    "usage": "収入が増えました。(Shuunyuu ga fuemashita. - My income increased.)"
+  },
+  "断": {
+    "meaning": "Severance, decline, refuse, apologize",
+    "onyomi": "ダン (dan)",
+    "kunyomi": "た(つ), ことわ(る) (ta(tsu), kotowa(ru))",
+    "usage": "断りません。(Kotowarimasen. - I will not refuse.)"
+  },
+  "石": {
+    "meaning": "Stone",
+    "onyomi": "セキ, シャク, コク (seki, shaku, koku)",
+    "kunyomi": "いし (ishi)",
+    "usage": "石を投げます。(Ishi wo nagemasu. - I throw a stone.)"
+  },
+  "違": {
+    "meaning": "Difference, differ",
+    "onyomi": "イ (i)",
+    "kunyomi": "ちが(う), たが(う) (chiga(u), taga(u))",
+    "usage": "意見が違います。(Iken ga chigaimasu. - Our opinions differ.)"
+  },
+  "消": {
+    "meaning": "Extinguish, turn off",
+    "onyomi": "ショウ (shou)",
+    "kunyomi": "き(える), け(す) (ki(eru), ke(su))",
+    "usage": "電気を消します。(Denki wo keshimasu. - I turn off the light.)"
+  },
+  "神": {
+    "meaning": "Gods, mind, soul",
+    "onyomi": "シン, ジン (shin, jin)",
+    "kunyomi": "かみ (kami)",
+    "usage": "神を信じます。(Kami wo shinjimasu. - I believe in God.)"
+  },
+  "番": {
+    "meaning": "Turn, number in a series",
+    "onyomi": "バン (ban)",
+    "kunyomi": "つがい (tsugai)",
+    "usage": "私の番です。(Watashi no ban desu. - It's my turn.)"
+  },
+  "規": {
+    "meaning": "Standard, measure",
+    "onyomi": "キ (ki)",
+    "kunyomi": "-",
+    "usage": "規則を守る。(Kisoku wo mamoru. - Obey the rules.)"
+  },
+  "術": {
+    "meaning": "Art, technique, skill, means, trick",
+    "onyomi": "ジュツ (jutsu)",
+    "kunyomi": "すべ (sube)",
+    "usage": "彼の技術は素晴らしいです。(Kare no gijutsu wa subarashii desu. - His technique is wonderful.)"
+  },
+  "備": {
+    "meaning": "Equip, provision, preparation",
+    "onyomi": "ビ (bi)",
+    "kunyomi": "そな(える) (sona(eru))",
+    "usage": "災害に備える。(Saigai ni sonaeru. - Prepare for a disaster.)"
+  },
+  "宅": {
+    "meaning": "Home, house, residence",
+    "onyomi": "タク (taku)",
+    "kunyomi": "-",
+    "usage": "ご自宅はどちらですか？(Gojitaku wa dochira desu ka? - Where is your home?)"
+  },
+  "害": {
+    "meaning": "Harm, injury",
+    "onyomi": "ガイ (gai)",
+    "kunyomi": "-",
+    "usage": "健康に害はありません。(Kenkou ni gai wa arimasen. - There is no harm to health.)"
+  },
+  "配": {
+    "meaning": "Distribute, spouse",
+    "onyomi": "ハイ (hai)",
+    "kunyomi": "くば(る) (kuba(ru))",
+    "usage": "書類を配布します。(Shorui wo haifu shimasu. - I distribute documents.)"
+  },
+  "警": {
+    "meaning": "Admonish, commandment",
+    "onyomi": "ケイ (kei)",
+    "kunyomi": "-",
+    "usage": "警察が事件を捜査している。(Keisatsu ga jiken wo sousa shite iru. - The police are investigating the case.)"
+  },
+  "育": {
+    "meaning": "Bring up, grow up, raise",
+    "onyomi": "イク (iku)",
+    "kunyomi": "そだ(つ), はぐく(む) (soda(tsu), haguku(mu))",
+    "usage": "子供を育てます。(Kodomo wo sodatemasu. - I raise children.)"
+  },
+  "席": {
+    "meaning": "Seat",
+    "onyomi": "セキ (seki)",
+    "kunyomi": "むしろ (mushiro)",
+    "usage": "席に着いてください。(Seki ni tsuite kudasai. - Please take a seat.)"
+  },
+  "訪": {
+    "meaning": "Call on, visit",
+    "onyomi": "ホウ (hou)",
+    "kunyomi": "おとず(れる), たず(ねる) (toozu(reru), tazu(neru))",
+    "usage": "友達の家を訪ねます。(Tomodachi no ie wo tazunemasu. - I visit my friend's house.)"
+  },
+  "乗": {
+    "meaning": "Ride",
+    "onyomi": "ジョウ, ショウ (jou, shou)",
+    "kunyomi": "の(る) (no(ru))",
+    "usage": "電車に乗ります。(Densha ni norimasu. - I ride the train.)"
+  },
+  "残": {
+    "meaning": "Remai",
+    "onyomi": "ザン (zan)",
+    "kunyomi": "のこ(る) (noko(ru))",
+    "usage": "残り時間。(Nokori jikan. - Remaining time.)"
+  }
+}

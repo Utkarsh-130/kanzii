@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Dimensions, Pressable } from 'react-native';
-import Animated, {
-  useSharedValue,
-  useAnimatedStyle,
-  withTiming,
-  interpolate,
-  FadeInUp,
-} from 'react-native-reanimated';
-import { Card, Chip } from 'react-native-paper';
-import { LinearGradient } from 'expo-linear-gradient';
 import { ThemedText } from '@/components/ThemedText';
 import { theme } from '@/components/theme';
+import { LinearGradient } from 'expo-linear-gradient';
+import React, { useEffect, useState } from 'react';
+import { Dimensions, Pressable, StyleSheet, View } from 'react-native';
+import { Card, Chip } from 'react-native-paper';
+import Animated, {
+  FadeInUp,
+  interpolate,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
 // Temporary replacement to test expandable character cards
 
@@ -21,7 +21,7 @@ interface KanjiData {
   onyomi?: string;
   kunyomi?: string;
   usage?: string;
-  level: string;
+  level?: string;
 }
 
 const FlashCard = ({ 
@@ -60,7 +60,7 @@ const FlashCard = ({
     };
   });
 
-  const getLevelColor = (level: string) => {
+  const getLevelColor = (level?: string) => {
     switch (level) {
       case 'basic':
         return theme.colors.primary;
@@ -83,7 +83,7 @@ const FlashCard = ({
         <Animated.View style={[styles.cardSide, frontAnimatedStyle]}>
           <Card style={styles.flashCard}>
             <LinearGradient
-              colors={[getLevelColor(data.level) + '20', getLevelColor(data.level) + '10']}
+              colors={[getLevelColor(data.level || 'basic') + '20', getLevelColor(data.level || 'basic') + '10']}
               style={styles.cardGradient}
             >
               <Card.Content style={styles.cardContent}>
@@ -113,7 +113,7 @@ const FlashCard = ({
           </Card>
         </Animated.View>
 
-        {/* Back of card */}
+    
         <Animated.View style={[styles.cardSide, styles.cardBack, backAnimatedStyle]}>
           <Card style={styles.flashCard}>
             <LinearGradient
@@ -132,14 +132,38 @@ const FlashCard = ({
                     {data.meaning}
                   </ThemedText>
                   
-                  <View style={styles.readingContainer}>
-                    <ThemedText type="default" style={styles.readingLabel}>
-                      Reading:
-                    </ThemedText>
-                    <ThemedText type="default" style={styles.reading}>
-                      {data.onyomi || data.kunyomi || 'No reading available'}
-                    </ThemedText>
-                  </View>
+                  {data.onyomi && (
+                    <View style={styles.readingContainer}>
+                      <ThemedText type="default" style={styles.readingLabel}>
+                        Onyomi:
+                      </ThemedText>
+                      <ThemedText type="default" style={styles.reading}>
+                        {data.onyomi}
+                      </ThemedText>
+                    </View>
+                  )}
+                  
+                  {data.kunyomi && (
+                    <View style={styles.readingContainer}>
+                      <ThemedText type="default" style={styles.readingLabel}>
+                        Kunyomi:
+                      </ThemedText>
+                      <ThemedText type="default" style={styles.reading}>
+                        {data.kunyomi}
+                      </ThemedText>
+                    </View>
+                  )}
+                  
+                  {data.usage && (
+                    <View style={styles.usageContainer}>
+                      <ThemedText type="default" style={styles.usageLabel}>
+                        Example:
+                      </ThemedText>
+                      <ThemedText type="default" style={styles.usage}>
+                        {data.usage}
+                      </ThemedText>
+                    </View>
+                  )}
                 </View>
                 
                 <ThemedText type="default" style={styles.tapHint}>
