@@ -1,34 +1,30 @@
-import { supabase } from '@/components/utils/supabase'
-import { Session } from '@supabase/supabase-js'
+import { auth, db } from '@/components/utils/firebase'
+import { User } from 'firebase/auth'
+import { doc, getDoc, setDoc } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import { Alert, StyleSheet, View } from 'react-native'
 import { Button, TextInput } from 'react-native-paper'
 
-export default function Account({ session }: { session: Session }) {
+export default function Account({ user }: { user: User }) {
   const [loading, setLoading] = useState(true)
   const [username, setUsername] = useState('')
   const [website, setWebsite] = useState('')
   const [avatarUrl, setAvatarUrl] = useState('')
 
   useEffect(() => {
-    if (session) getProfile()
-  }, [session])
+    if (user) getProfile()
+  }, [user])
 
   async function getProfile() {
     try {
       setLoading(true)
-      if (!session?.user) throw new Error('No user on the session!')
+      if (!user) throw new Error('No user!')
 
-      const { data, error, status } = await supabase
-        .from('profiles')
-        .select(`username, website, avatar_url`)
-        .eq('id', session?.user.id)
-        .single()
-      if (error && status !== 406) {
-        throw error
-      }
+      const docRef = doc(db, 'profiles', user.uid)
+      const docSnap = await getDoc(docRef)
 
-      if (data) {
+      if (docSnap.exists()) {
+        const data = docSnap.data()
         setUsername(data.username)
         setWebsite(data.website)
         setAvatarUrl(data.avatar_url)
@@ -53,21 +49,17 @@ export default function Account({ session }: { session: Session }) {
   }) {
     try {
       setLoading(true)
-      if (!session?.user) throw new Error('No user on the session!')
+      if (!user) throw new Error('No user!')
 
       const updates = {
-        id: session?.user.id,
         username,
         website,
         avatar_url,
-        updated_at: new Date(),
+        updated_at: new Date().toISOString(),
       }
 
-      const { error } = await supabase.from('profiles').upsert(updates)
-
-      if (error) {
-        throw error
-      }
+      await setDoc(doc(db, 'profiles', user.uid), updates, { merge: true })
+      Alert.alert('Success', 'Profile updated!')
     } catch (error) {
       if (error instanceof Error) {
         Alert.alert(error.message)
@@ -80,7 +72,7 @@ export default function Account({ session }: { session: Session }) {
   return (
     <View style={styles.container}>
       <View style={[styles.verticallySpaced, styles.mt20]}>
-        <TextInput label="Email" value={session?.user?.email} disabled />
+        <TextInput label="Email" value={user?.email || ''} disabled />
       </View>
       <View style={styles.verticallySpaced}>
         <TextInput label="Username" value={username || ''} onChangeText={(text) => setUsername(text)} />
@@ -99,7 +91,7 @@ export default function Account({ session }: { session: Session }) {
       </View>
 
       <View style={styles.verticallySpaced}>
-        <Button onPress={() => supabase.auth.signOut()}>Sign Out</Button>
+        <Button onPress={() => auth.signOut()}>Sign Out</Button>
       </View>
     </View>
   )
@@ -118,4 +110,4 @@ const styles = StyleSheet.create({
   mt20: {
     marginTop: 20,
   },
-})
+})

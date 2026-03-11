@@ -1,24 +1,22 @@
 import Account from '@/components/Accounts'
 import Auth from '@/components/Auth'
-import { supabase } from '@/components/utils/supabase'
-import { Session } from '@supabase/supabase-js'
+import { auth, db } from '@/components/utils/firebase'
+import { User, onAuthStateChanged } from 'firebase/auth'
+import { doc, getDoc } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, ScrollView, Dimensions, Alert } from 'react-native'
+import { View, StyleSheet, ScrollView, Dimensions } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { PaperProvider, Card, Surface, Button, Text, IconButton, Avatar } from 'react-native-paper'
+import { PaperProvider, Card, Surface, Button, IconButton, Avatar } from 'react-native-paper'
 import { LinearGradient } from 'expo-linear-gradient'
 import { theme } from '@/components/theme'
 import { ThemedText } from '@/components/ThemedText'
 import Animated, { 
   FadeInDown, 
   FadeInUp, 
-  FadeInLeft, 
-  FadeInRight,
   useSharedValue,
   useAnimatedStyle,
   withRepeat,
   withTiming,
-  interpolate,
 } from 'react-native-reanimated'
 import { router } from 'expo-router'
 
@@ -162,31 +160,24 @@ const LearningCards = () => (
   </View>
 );
 
-const AuthenticatedWelcomeSection = ({ session }: { session: Session }) => {
+const AuthenticatedWelcomeSection = ({ user }: { user: User }) => {
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getProfile();
-  }, [session]);
+  }, [user]);
 
   async function getProfile() {
     try {
       setLoading(true);
-      if (!session?.user) throw new Error('No user on the session!');
+      if (!user) throw new Error('No user!');
 
-      const { data, error, status } = await supabase
-        .from('profiles')
-        .select(`username`)
-        .eq('id', session?.user.id)
-        .single();
+      const docRef = doc(db, 'profiles', user.uid);
+      const docSnap = await getDoc(docRef);
         
-      if (error && status !== 406) {
-        console.log('Profile error:', error);
-      }
-
-      if (data) {
-        setUsername(data.username);
+      if (docSnap.exists()) {
+        setUsername(docSnap.data().username);
       }
     } catch (error) {
       console.log('Error loading user profile:', error);
@@ -195,7 +186,7 @@ const AuthenticatedWelcomeSection = ({ session }: { session: Session }) => {
     }
   }
 
-  const displayName = username || session?.user?.email?.split('@')[0] || 'User';
+  const displayName = username || user?.email?.split('@')[0] || 'User';
 
   return (
     <View style={styles.welcomeSection}>
@@ -213,7 +204,7 @@ const AuthenticatedWelcomeSection = ({ session }: { session: Session }) => {
                 Welcome back, {displayName}!
               </ThemedText>
               <ThemedText type="default" style={styles.userEmail}>
-                {session?.user?.email}
+                {user?.email}
               </ThemedText>
             </View>
             <IconButton
@@ -237,7 +228,7 @@ const AuthenticatedWelcomeSection = ({ session }: { session: Session }) => {
   );
 };
 
-const UserProgressCard = ({ session }: { session: Session }) => (
+const UserProgressCard = ({ user }: { user: User }) => (
   <Animated.View entering={FadeInUp.delay(300)} style={styles.progressSection}>
     <Surface style={styles.progressSurface} elevation={2}>
       <ThemedText type="subtitle" style={styles.progressTitle}>
@@ -275,20 +266,16 @@ const UserProgressCard = ({ session }: { session: Session }) => (
 
 
 export default function App() {
-  const [session, setSession] = useState<Session | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session)
-      setLoading(false)
-    })
-
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-      setLoading(false)
-    })
-  }, [])
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+      setLoading(false);
+    });
+    return unsubscribe;
+  }, []);
 
   // Show loading screen while checking authentication
   if (loading) {
@@ -321,7 +308,7 @@ export default function App() {
   }
 
   // If not authenticated, show only the auth screen
-  if (!session || !session.user) {
+  if (!user) {
     return (
       <PaperProvider theme={theme}>
         <LinearGradient
@@ -416,8 +403,8 @@ export default function App() {
             contentContainerStyle={styles.scrollContent}
             showsVerticalScrollIndicator={false}
           >
-            <AuthenticatedWelcomeSection session={session} />
-            <UserProgressCard session={session} />
+            <AuthenticatedWelcomeSection user={user} />
+            <UserProgressCard user={user} />
             <LearningCards />
           </ScrollView>
         </SafeAreaView>
@@ -425,6 +412,7 @@ export default function App() {
     </PaperProvider>
   )
 }
+
 
 const styles = StyleSheet.create({
   container: {

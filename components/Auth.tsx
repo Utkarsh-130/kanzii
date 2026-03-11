@@ -1,18 +1,11 @@
-import { supabase } from '@/components/utils/supabase'
+import { auth } from '@/components/utils/firebase'
 import React, { useState } from 'react'
-import { Alert, AppState, StyleSheet, View } from 'react-native'
-import { Button, TextInput, Surface } from 'react-native-paper'
+import { Alert, StyleSheet, View } from 'react-native'
+import { Button, TextInput } from 'react-native-paper'
 import { ThemedText } from '@/components/ThemedText'
 import { theme } from '@/components/theme'
 import Animated, { FadeInDown } from 'react-native-reanimated'
-
-AppState.addEventListener('change', (state) => {
-  if (state === 'active') {
-    supabase.auth.startAutoRefresh()
-  } else {
-    supabase.auth.stopAutoRefresh()
-  }
-})
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
 
 export default function Auth() {
   const [email, setEmail] = useState('')
@@ -21,28 +14,25 @@ export default function Auth() {
 
   async function signInWithEmail() {
     setLoading(true)
-    const { error } = await supabase.auth.signInWithPassword({
-      email: email,
-      password: password,
-    })
-
-    if (error) Alert.alert(error.message)
-    setLoading(false)
+    try {
+      await signInWithEmailAndPassword(auth, email, password)
+    } catch (error: any) {
+      Alert.alert('Error', error.message)
+    } finally {
+      setLoading(false)
+    }
   }
 
   async function signUpWithEmail() {
     setLoading(true)
-    const {
-      data: { session },
-      error,
-    } = await supabase.auth.signUp({
-      email: email,
-      password: password,
-    })
-
-    if (error) Alert.alert(error.message)
-    if (!session) Alert.alert('Please check your inbox for email verification!')
-    setLoading(false)
+    try {
+      await createUserWithEmailAndPassword(auth, email, password)
+      Alert.alert('Success', 'Account created successfully!')
+    } catch (error: any) {
+      Alert.alert('Error', error.message)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -151,3 +141,4 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
 })
+

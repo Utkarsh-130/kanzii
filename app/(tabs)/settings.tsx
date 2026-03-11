@@ -4,19 +4,20 @@ import { Surface, Button, TextInput, Avatar, Card } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Session } from '@supabase/supabase-js';
+import { User, onAuthStateChanged } from 'firebase/auth';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import Auth from '@/components/Auth';
 import { theme } from '@/components/theme';
-import { supabase } from '@/components/utils/supabase';
+import { auth, db } from '@/components/utils/firebase';
 
 interface SettingsProps {
-  session: Session;
+  user: User;
 }
 
-function SettingsContent({ session }: SettingsProps) {
+function SettingsContent({ user }: SettingsProps) {
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
   const [username, setUsername] = useState('');
@@ -24,25 +25,19 @@ function SettingsContent({ session }: SettingsProps) {
   const [avatarUrl, setAvatarUrl] = useState('');
 
   useEffect(() => {
-    if (session) getProfile();
-  }, [session]);
+    if (user) getProfile();
+  }, [user]);
 
   async function getProfile() {
     try {
       setLoading(true);
-      if (!session?.user) throw new Error('No user on the session!');
+      if (!user) throw new Error('No user!');
 
-      const { data, error, status } = await supabase
-        .from('profiles')
-        .select(`username, website, avatar_url`)
-        .eq('id', session?.user.id)
-        .single();
+      const docRef = doc(db, 'profiles', user.uid);
+      const docSnap = await getDoc(docRef);
       
-      if (error && status !== 406) {
-        throw error;
-      }
-
-      if (data) {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
         setUsername(data.username || '');
         setWebsite(data.website || '');
         setAvatarUrl(data.avatar_url || '');
@@ -59,21 +54,16 @@ function SettingsContent({ session }: SettingsProps) {
   async function updateProfile() {
     try {
       setUpdating(true);
-      if (!session?.user) throw new Error('No user on the session!');
+      if (!user) throw new Error('No user!');
 
       const updates = {
-        id: session?.user.id,
         username,
         website,
         avatar_url: avatarUrl,
-        updated_at: new Date(),
+        updated_at: new Date().toISOString(),
       };
 
-      const { error } = await supabase.from('profiles').upsert(updates);
-
-      if (error) {
-        throw error;
-      }
+      await setDoc(doc(db, 'profiles', user.uid), updates, { merge: true });
 
       Alert.alert('Success', 'Profile updated successfully!');
     } catch (error) {
@@ -97,7 +87,7 @@ function SettingsContent({ session }: SettingsProps) {
         {
           text: 'Sign Out',
           style: 'destructive',
-          onPress: () => supabase.auth.signOut(),
+          onPress: () => auth.signOut(),
         },
       ]
     );
@@ -143,13 +133,13 @@ function SettingsContent({ session }: SettingsProps) {
                 <View style={styles.avatarSection}>
                   <Avatar.Text
                     size={80}
-                    label={username ? username.charAt(0).toUpperCase() : session?.user?.email?.charAt(0).toUpperCase() || 'U'}
+                    label={username ? username.charAt(0).toUpperCase() : user?.email?.charAt(0).toUpperCase() || 'U'}
                     style={styles.avatar}
                     labelStyle={styles.avatarText}
                   />
                   <View style={styles.userInfo}>
                     <ThemedText type="subtitle" style={styles.userEmail}>
-                      {session?.user?.email}
+                      {user?.email}
                     </ThemedText>
                     <ThemedText type="default" style={styles.userStatus}>
                       Active Account
@@ -171,7 +161,7 @@ function SettingsContent({ session }: SettingsProps) {
                 <View style={styles.inputContainer}>
                   <TextInput
                     label="Email"
-                    value={session?.user?.email || ''}
+                    value={user?.email || ''}
                     disabled
                     mode="outlined"
                     style={styles.input}
@@ -389,19 +379,15 @@ const styles = StyleSheet.create({
 
 // Main Settings component that handles authentication
 export default function Settings() {
-  const [session, setSession] = useState<Session | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
       setLoading(false);
     });
-
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-      setLoading(false);
-    });
+    return unsubscribe;
   }, []);
 
   if (loading) {
@@ -415,7 +401,7 @@ export default function Settings() {
   }
 
   // If not authenticated, show auth screen
-  if (!session || !session.user) {
+  if (!user) {
     return (
       <ThemedView style={styles.authContainer}>
         <LinearGradient
@@ -451,5 +437,5 @@ export default function Settings() {
   }
 
   // If authenticated, show settings content
-  return <SettingsContent session={session} />;
+  return <SettingsContent user={user} />;
 }
