@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+⛩️ Kanzii
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Kanzii is a Japanese language learning application focused on architectural stability and a complete visual overhaul. By integrating real-time data management and adopting Material UI principles, the app is fast, reliable, and highly intuitive for your daily kanji study sessions.
+ What's New in the Latest Version
+1. Persistent Study Progress (Supabase Integration)
 
-## Get started
+    Improved Integration: Overhauled the studied kanji integration using Supabase.
 
-1. Install dependencies
+    Dynamic Fetching: Your studied kanji are now fetched directly from the cloud, ensuring your progress is always up-to-date across your devices.
+   <p align="center">
+<img src="https://github.com/user-attachments/assets/ce9eea1f-4b69-4064-8262-41ea5bcba4e9" width="32%" alt="Kanzii Screenshot 1" />
+  <img src="https://github.com/user-attachments/assets/1e334b15-e021-43e6-b11d-e732765c5d9b" width="32%" alt="Kanzii Screenshot 1" />
 
-   ```bash
-   npm install
-   ```
+  <img src="https://github.com/user-attachments/assets/9a0cd777-e586-40a4-b7a7-ea0b0ee9b4cb" width="32%" alt="Kanzii Screenshot 2" />
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+</p> 
 
-In the output, you'll find options to open the app in a
+3. Material UI & Expo Colors
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    Modern Design: The interface has been completely redesigned to feel "at home" on any device.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    Material 3 Principles: Implemented a clean, card-based layout with meaningful depth and shadows based on the system colors.
 
-## Get a fresh project
+    Expo Color Palette: Utilized the official Expo color system to ensure high-contrast readability and a vibrant, modern aesthetic that reduces eye strain during long sessions.
 
-When you're ready, run:
+    Fluid Interactions: Improved haptics for a more tactile, responsive feel.
+ <p align="center">
 
-```bash
-npm run reset-project
-```
+  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+  <img src="https://github.com/user-attachments/assets/a0a113de-bfb9-4519-a754-cac57a60befd" width="32%" alt="Kanzii Screenshot 2" />
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+</p>
+🛠️ Tech Stack
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   Frontend: React Native & Expo
 
-## Join the community
+   UI/Styling: Material UI principles & Expo Color System
 
-Join our community of developers creating universal apps.
+   Backend & Database: Supabase for real-time cloud fetching
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+👨‍💻 Author
+
+Utkarsh Upadhyay
+
+    GitHub: @Utkarsh-130
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE
